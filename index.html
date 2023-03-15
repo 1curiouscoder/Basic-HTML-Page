@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title> Basic HTML Page </title>
+    <title>  Basic HTML Page  </title>
     <meta name="charset" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS">
@@ -14,40 +14,58 @@
       h1 {
         text-align:center;
       }
-      li {
-        
-        
+      p {
+        font-family:Monospace;
+        font-size:15px;
       }
       a {
         font-family:cursive;
         text-decoration:none;
       }
-      .headings {
+      .codebox {
+        display:inline;
+        
+        padding: 10px;
+        border:2px solid white;
+        background-color:black;
+        color:white;
+      }
+      h2 {
+        font-size:20px;
         font-family:sans-serif;
-        text-decoration:underline;
+        border: 2px solid black;
+        border-radius:20px;
+        display:inline;
+        padding:8px;
+        margin:50px 0px;
+      }
+
+      h3{
+        font-size:15px;
+        font-family:sans-serif;
+      }
+      section {
+        margin:40px 40px;
+      }
+      aside{
+        float:left;
+      }
+      ol{
+        list-style-type:none;
       }
     </style>
   </head>
 <body>
-  <h1 style="font-family:monospace"> Basic Html Page </h1>
-  <h2 class="headings">Contents</h2>
+
+  <header>
+    <h1 style="font-family:monospace">&lt; Basic Html Page &gt;</h1>
+  </header>
+  
+  <aside>
   <ol>
     <li><a href="#1">What is HTML?</a></li>
     <li><a href="">HTML Elements</a></li>
-    <li><a href="">HTML attributes</a>
-      <ul>
-        <li><a href="">Src attribute</a></li>
-        <li><a href="">Href attribute</a></li>
-        <li><a href="">Width & Height attribute</a></li>
-        <li><a href="">Alt attribute</a></li>
-        <li><a href="">Style attribute</a></li>
-        <li><a href="">Lang attribute</a></li>
-        <li><a href="">Title attribute</a></li
-          <li><a href="">Class attribute</a></li
-          <li><a href="">Id attribute</a></li>
-      </ul>
-    </li>
-    
+    <li><a href="">HTML attributes</a></li>
     <li><a href="">HTML Headings</a></li>
     <li><a href="">HTML Paragraphs</a></li>
     <li><a href="">HTML Horizontal rule</a></li>
@@ -71,17 +89,82 @@
     <li><a href="">HTML head element</a></li>
     <li><a href="">HTML meta element</a></li>
     <li><a href="">HTML base element</a></li>
-    <li><a href="">HTML Layout element</a></li>
+    <li><a href="">HTML Layout </a></li>
     <li><a href="">HTML Computercode element</a></li>
-    <li><a href="">HTML Semantics element</a></li>
-    <li><a href="">HTML entities element</a></li>
-    <li><a href="">HTML encoding element</a></li>
-    <li><a href="">HTML Forms element</a></li>
-    
+    <li><a href="">HTML Semantics </a></li>
+    <li><a href="">HTML entities </a></li>
+    <li><a href="">HTML encoding </a></li>
+    <li><a href="">HTML Forms</a></li>
   </ol>
-  <div>
-    <h1 id="1" class="headings">What is HTML?</h1>
+    </aside>
+  <section id="1" class="section">
+  
+    <h2  >What is HTML?</h2>
+    <p> <abbr title="Hypertext Markup Language">HTML</abbr> stands for Hypertext Markup Language which specifies various elements like &lt;p&gt;, &lt;h1&gt;, etc. to define the type of content so the browser can display it accordingly. </p>
+
+  </section>
+
+  <section id="2" class="section">
+    <h2   >HTML Elements</h2>
+    <ul>    
+      <li>
+        <p>
+          HTML elements are defined by a starting tag , some content and then a closing tag.
+        </p> 
+      </li>
+      <li>
+        <p>
+          They are used to specify different type of content and help browsers define how to display a content.
+        </p>
+      </li>
+      <li>
+        <p>
+          Basic syntax of a HTML element - &lt;tagname&gt; Content goes here... &lt;/tagname&gt; <br>
+          Following is a syntax for a paragraph element: 
+        </p>
+        <p >
+        <code class="codebox">
+           <span title="starting tag">
+             &lt;p&gt;
+           </span>
+           Content comes here 
+           <span title="closing tag">
+             &lt;/p&gt;
+           </span>           
+         </code>
+        </p>
+      </li>
+      <li>
+        The element that don't have any content are called empty elements. eg. &lt;br&gt;, &lt;hr&gt;, etc.
+      </li>
+    </ul>
+  </section>
+
+  <section id="3">
+    <h2>
+      HTML Attributes
+    </h2>
+    <ul>
+      <li>
+        <p>HTML element attribute provide additional information about the element.</p>
+    
+      </li>
+      <li>
+        <p>Attribute usually come in name/value pairs: name="value"</p>
+      </li>
+      Eg. id="head"
+    </ul>
+    <h3> Href Attribute </h3>
     <p>
-  </div>
+      Href attribute sprecies the url to which a link points or will head to once clicked.
+      Eg. href="https://www.w3schools.com"
+    </p>
+    
+    <h3> Src Attribute </h3>
+    <p>
+      src attribute sprecies the location of the file to be displayed. 
+      Eg. src="https://www.w3schools.com/images/image.jpg"
+    </p>
+  </section>
 </body>
 </html>

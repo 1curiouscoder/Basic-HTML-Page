@@ -6,62 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS">
     <meta name="description" content="Basic Html website implementing HTML elements and their attributes">
-    <style>
-      body {
-        background-color: rgb(0, 128, 102,.4);
-        
-      }
-      h1 {
-        text-align:center;
-      }
-      p {
-        font-family:Monospace;
-        font-size:15px;
-      }
-      a {
-        font-family:cursive;
-        text-decoration:none;
-      }
-      .codebox {
-        display:inline;
-        
-        padding: 10px;
-        border:2px solid white;
-        background-color:black;
-        color:white;
-      }
-      h2 {
-        font-size:20px;
-        font-family:sans-serif;
-        border: 2px solid black;
-        border-radius:20px;
-        display:inline;
-        padding:8px;
-        margin:50px 0px;
-      }
-
-      h3{
-        font-size:15px;
-        font-family:sans-serif;
-      }
-      section {
-        margin:40px 40px;
-      }
-      aside{
-        display:static;
-        float:left;
-      }
-      ol{
-        list-style-type:none;
-      }
-    </style>
+<link rel="stylesheet" href="styles.css">
   </head>
 <body>
-
+<div class="container">
+ 
+  <div id="header">
   <header>
     <h1 style="font-family:monospace">&lt; Basic Html Page &gt;</h1>
   </header>
-  
+  </div>
+    
+    
+  <div id="nav">
   <aside>
   <ol>
     <li><a href="#1">What is HTML?</a></li>
@@ -98,12 +55,15 @@
     <li><a href="">HTML Forms</a></li>
   </ol>
     </aside>
+  </div>
+    
+  <div id="content">
   <section id="1" class="section">
   <article>
     <h2  >What is HTML?</h2>
     <p> <abbr title="Hypertext Markup Language">HTML</abbr> stands for Hypertext Markup Language which specifies various elements like &lt;p&gt;, &lt;h1&gt;, etc. to define the type of content so the browser can display it accordingly. </p>
 </article>
-  </section>
+  </se>
 
   <section id="2" class="section">
     <article>
@@ -144,6 +104,7 @@
   </section>
 
   <section id="3">
+    <article>
     <h2>
       HTML Attributes
     </h2>
@@ -168,6 +129,9 @@
       src attribute sprecies the location of the file to be displayed. 
       Eg. src="https://www.w3schools.com/images/image.jpg"
     </p>
+      </article>
   </section>
+  </div>
+</div>
 </body>
 </html>
